@@ -1,0 +1,171 @@
+
+body{
+	margin: 0;
+
+  text-align: center;
+ font-family: Helvetica; font-size: 24px; font-style: normal; 
+
+}
+.prvi{
+	width:100%;
+	text-align:center;
+	height:100vh;
+
+ }
+ 
+
+#test {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.main {
+  float: left;
+  height:100%;
+  width: 100%; 
+
+  color:grey;
+  text-align:center;
+    background-image:url("../images/zvezde.jpg");
+}
+table td {
+
+    border: 1px #000000 solid;
+
+}
+
+.slika{
+background: url("../images/letalo.png");
+width:100px;
+height:100px;
+	margin:auto;
+	margin-top:4%;
+	
+	
+	
+	  
+	
+	
+	
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100px);
+  }
+  to { 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.slika {
+   animation: fade 2s linear forwards;
+}
+#sprite-container{
+margin:auto;
+position: relative;
+width:72px;
+height:72px;
+
+}
+#sprite-image2 {
+	
+    height: 90px;
+    width: 90px;
+    background: url("../images/planets.png")
+      0px 0px;
+	  position: absolute;
+	  
+  
+  }
+#sprite-image {
+	left:10px;
+	top:10px;
+    height: 64px;
+    width: 64px;
+    background: url("../images/exp.png")
+      0px 0px;
+	  position: absolute;
+  
+  }
+#myCanvas{
+ 
+
+width:36%;
+height:width;
+display: inline;
+	
+}
+#asteroid3{
+	margin-top:5%;
+	height:100px;
+	width:100px;
+	left:15%;
+	background: url("../images/asteroid3.png")
+      0px 0px;
+	   background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+	position: absolute;
+}
+#asteroid2{
+	margin-top:10%;
+	right:10%;
+	height:100px;
+	width:85px;
+	background: url("../images/asteroid2.png")
+      0px 0px;
+	   background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+	position: absolute;
+}
+#asteroid1{
+	
+	height:50px;
+	width:50px;
+	bottom:5%;
+	left:10%;
+	background: url("../images/asteroid1.png")
+      0px 0px;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+#gumb2{
+	bottom:0;
+	
+	width:36%;
+	margin:auto;
+	
+	background-color:#b8aec8;
+	padding:10px;
+	
+	color:white;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.3s;
+	text-decoration: none;
+	cursor: pointer;
+	    z-index: 1;
+    
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 0px 20px rgba(0, 0, 0, 0.5);
+}
+button:hover {opacity: 0.8}
+
+@media screen and (  max-width: 800px       ) {
+  .left    ,      .main    ,      .right {
+    width: 20%; 
+  }
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.ico" sizes="16x16">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
+	<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+
+	
+	<title>Labirint</title>
+</head>
+
+
+<body>
+
+	<header></header>
+
+	<div class=prvi>
+
+
+		<div class="main">
+
+
+
+		
+			<div class="slika" onclick="start()"></div>
+
+
+			<div id="konec"><button id="gumb2" onclick="reset()">Reset</button></div>
+			<div id="width" style="width:100%; text-align:center;"><canvas id="myCanvas" width="485"
+					height="485"></canvas></div>
+					<div id="sprite-container">
+            <div id="sprite-image2">
+            </div>
+					
+            <div id="sprite-image">
+            </div>
+          </div>
+			<script >Swal.fire(
+			  'Navodila',
+			  'Za zacetek izrisa poti kliknite na ladjo.'
+			  
+			  
+			)</script>
+			
+		  <script src="javascript/spritesheet1.js"></script>
+              <script src="javascript/spritesheet2.js"></script>
+          
+			<script src="javascript/script.js"></script>
+
+
+		
+	</div>
+	
+		<div id="asteroid3">
+		</div>
+		<script src="javascript/spritesheet3.js"></script>
+		
+		<div id="asteroid2">
+		</div>
+		<script src="javascript/spritesheet4.js"></script>
+		
+		<div id="asteroid1">
+		</div>
+		<script src="javascript/spritesheet5.js"></script>
+		
+	</div>
+
+</body>
+
+</html>
